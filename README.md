@@ -1,21 +1,17 @@
 # image-to-pixel-art
 
-Portable TypeScript library that turns RGBA image buffers into pixel art (Pixel It algorithm, MIT). Reference tool page: [image-to-pixel-art](https://www.uwarp.design/image-to-pixel-art).
+**Web tool:** [Image to Pixel Art](https://www.uwarp.design/image-to-pixel-art) — free browser editor for converting images to pixel art (the reference UI for this library).
 
-Package: **`@sherotree/image-to-pixel-art`** on [JSR](https://jsr.io/@sherotree/image-to-pixel-art) (scope ready; **no version published yet** — see [SCOPE.md](./SCOPE.md)).
+Portable TypeScript library that turns RGBA image buffers into pixel art (Pixel It algorithm, MIT).
 
-## Install (after the first JSR publish)
+Package: **`@sherotree/image-to-pixel-art`** on [JSR](https://jsr.io/@sherotree/image-to-pixel-art) (`0.1.0`).
+
+## Install
 
 ```bash
 deno add jsr:@sherotree/image-to-pixel-art
 # or
 npx jsr add @sherotree/image-to-pixel-art
-```
-
-Until published, clone this repo and import locally:
-
-```ts
-import { imageToPixelArt } from './mod.ts';
 ```
 
 ## Quick start (portable, no DOM)
