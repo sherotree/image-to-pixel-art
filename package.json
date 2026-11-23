@@ -1,0 +1,45 @@
+{
+  "name": "@sherotree/image-to-pixel-art",
+  "version": "0.1.0",
+  "description": "Portable image-to-pixel-art conversion (Pixel It algorithm + built-in palettes).",
+  "type": "module",
+  "license": "MIT",
+  "author": "Sherotree",
+  "keywords": [
+    "pixel-art",
+    "pixelate",
+    "image",
+    "palette",
+    "rgba",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherotree/image-to-pixel-art.git"
+  },
+  "homepage": "https://github.com/sherotree/image-to-pixel-art#readme",
+  "bugs": {
+    "url": "https://github.com/sherotree/image-to-pixel-art/issues"
+  },
+  "exports": {
+    ".": "./mod.ts",
+    "./browser": "./src/browser/mod.ts"
+  },
+  "files": [
+    "mod.ts",
+    "src",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "SCOPE.md"
+  ],
+  "scripts": {
+    "test": "deno test -A tests/",
+    "check": "deno check mod.ts src/browser/mod.ts examples/basic.ts examples/palette.ts examples/grayscale.ts",
+    "publish:dry-run": "deno publish --dry-run --allow-dirty"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
